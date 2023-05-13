@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Seatwork 2 iiyak na ako</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+<style type="text/css">
+	body {
+		text-align: center;
+		margin: 10px;
+		padding: 20px;
+		background: url(2.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.sec {
+		background: url(1.png);
+	}
+	.min {
+		background: url(1.png)
+	}
+	.hr {
+		background: url(1.png)
+	}
+	.day {
+		background: url(1.png)
+	}
+</style>
+</head>
+
+<body>
+	<font color="#0b6613">
+	<img src="alarm.gif">
+	<hr>
+	<h1>*ੈ✩‧₊˚Time Converter*ੈ✩‧₊˚</h1>
+	<h5>Wake up sleepy-head! You're late for class! Hurry, use these conversion factors to determine how late you are for class!</h5>
+	<h6><i>Disclaimer: Alexis Time Incorporations is not responsible for any missed appointments and the like resulting from user's usage of this site.</i></h6>
+	<br>
+	<hr>
+	<br>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+			<div class= "sec">
+			<b>Seconds...</b>
+			<p><i>Did you know the longest fart ever recorded was 162 seconds long?</i></p>
+			<hr>
+			<p><input type="number" id="sec"></p>
+			<input type="button" class="btn btn-danger" onclick="sec2min()" value="To Minutes">
+			<input type="button" class="btn btn-danger" onclick="sec2hr()" value="To Hours">
+			<input type="button" class="btn btn-danger" onclick="sec2day()" value="To Days">
+
+			<hr>
+			</div>
+			</div>
+
+<script type="text/javascript">
+	function sec2min(){
+		let a =  parseInt (document.getElementById("sec").value);
+		let b = 60;
+		alert(a / b);
+	}
+	function sec2hr(){
+		let a =  parseInt (document.getElementById("sec").value);
+		let b = 3600;
+		alert(a / b);
+	}
+	function sec2day(){
+		let a =  parseInt (document.getElementById("sec").value);
+		let b = 86400;
+		alert(a / b);
+	}
+</script>
+<div class="col-md-6">
+	<div class= "min">
+			<b>Minutes...</b>
+			<p><i>♫ 525,600 minutes, how do you measure, measure a year?
+♫?</i></p>
+						<hr>
+
+			<p><input type="number" id="min"></p>
+			<input type="button" class="btn btn-danger" onclick="min2sec()" value="To Seconds">
+			<input type="button" class="btn btn-danger" onclick="min2hr()" value="To Hours">
+			<input type="button" class="btn btn-danger" onclick="min2day()" value="To Days">
+						<hr>
+
+		</div>
+			</div>
+
+	</div>
+<script type="text/javascript">
+	function min2sec(){
+		let a =  parseInt (document.getElementById("min").value);
+		let b = 60;
+		alert(a * b);
+	}
+	function min2hr(){
+		let a =  parseInt (document.getElementById("min").value);
+		let b = 60;
+		alert(a / b);
+	}
+	function min2day(){
+		let a =  parseInt (document.getElementById("min").value);
+		let b = 1440;
+		alert(a / b);
+	}
+</script>
+<br>
+<div class="row">
+	<div class="col-md-6">
+		<div class= "hr">
+			<b>Hours...</b>
+			<p><i>The ideal amount of time to sleep for humans per night is 8 hours, which I hope to get more of in summer vacation. Yipee!</i></p>
+									<hr>
+
+			<p><input type="number" id="hr"></p>
+			<input type="button" class="btn btn-danger" onclick="hr2sec()" value="To Seconds">
+			<input type="button" class="btn btn-danger" onclick="hr2min()" value="To Minutes">
+			<input type="button" class="btn btn-danger" onclick="hr2day()" value="To Days">
+						<hr>
+
+		</div>
+			</div>
+<script type="text/javascript">
+	function hr2sec(){
+		let a =  parseInt (document.getElementById("hr").value);
+		let b = 3600;
+		alert(a * b);
+	}
+	function hr2min(){
+		let a =  parseInt (document.getElementById("hr").value);
+		let b = 60;
+		alert(a * b);
+	}
+	function hr2day(){
+		let a =  parseInt (document.getElementById("hr").value);
+		let b = 24;
+		alert(a / b);
+	}
+</script>
+	<div class="col-md-6">
+		<div class= "day">
+		<b>Days...</b>
+		<p><i>Did you know that the longest a person had sat on the toilet for was 116 hours, just a couple hours short from 7 days?</i></p>
+					<hr>
+
+			<p><input type="number" id="day"></p>
+			<input type="button" class="btn btn-danger" onclick="day2sec()" value="To Seconds">
+			<input type="button" class="btn btn-danger" onclick="day2min()" value="To Minutes">
+			<input type="button" class="btn btn-danger" onclick="day2hr()" value="To Hours">
+						<hr>
+
+		</div>
+			</div>
+<script type="text/javascript">
+	function day2sec(){
+		let a =  parseInt (document.getElementById("day").value);
+		let b = 86400;
+		alert(a * b);
+	}
+	function day2min(){
+		let a =  parseInt (document.getElementById("day").value);
+		let b = 1440;
+		alert(a * b);
+	}
+	function day2hr(){
+		let a =  parseInt (document.getElementById("day").value);
+		let b = 24;
+		alert(a * b);
+	}
+</script>
+</div>
+</div>
+</div>
+</font>
+</body>
+</html>
